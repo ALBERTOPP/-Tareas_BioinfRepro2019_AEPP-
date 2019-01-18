@@ -1,2 +1,2 @@
-# Hello-World
-repository x
+# "Tareas_BioinfRepro2019_TusIniciales"
+Repositorio para tareas
