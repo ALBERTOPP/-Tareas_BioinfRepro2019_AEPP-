@@ -1,0 +1,15 @@
+##Script para bajar 5 secuencias de GENEBANK y buscar secuencia "TGCA" en cada una de ellas
+!/bin/bash
+for i in Quercusseq;
+do mkdir $i; ###Hace un directorio para depositar las secuencias
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=JF506492.1"> $i/GENES1.txt;###Baja las secuencias y las deposita en un archivo de texto
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=JF506498.1"> $i/GENES2.txt;
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=JF506497.1"> $i/GENES3.txt;
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=JF506496.1"> $i/GENES4.txt;
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=JF506491.1"> $i/GENES5.txt;
+grep -c "TGCA" $i/GENES1.txt;###Busca cuantas veces se encuentra la secuencia "TGCA" en el primer archivo
+grep -c "TGCA" $i/GENES2.txt;
+grep -c "TGCA" $i/GENES3.txt;
+grep -c "TGCA" $i/GENES4.txt;
+grep -c "TGCA" $i/GENES5.txt;
+done
