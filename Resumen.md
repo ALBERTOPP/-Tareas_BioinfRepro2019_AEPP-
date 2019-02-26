@@ -3,7 +3,7 @@ Waldbieser, Bosworth, Beck, Thongda & Peatman; 2014). Apartir de SNPs generados 
 
 #Se formo una carpeta docker con un run de vcf.
 
-¨Analisiss="docker run --rm -v /home/alberto/Escritorio/ProyectoUnidad5_AEPP/Analisis:/data biocontainers/vcftools:0.1.15 vcftools"¨
+Analisiss="docker run --rm -v /home/alberto/Escritorio/ProyectoUnidad5_AEPP/Analisis:/data biocontainers/vcftools:0.1.15 vcftools"
 
 ##Se corren los datos con la opcion --vcf para ver el contenido.
 
