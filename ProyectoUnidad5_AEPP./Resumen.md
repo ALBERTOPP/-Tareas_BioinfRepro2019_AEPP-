@@ -1,6 +1,8 @@
 ##Los datos se obtuvieron de la publicación "SNP discovery in wild and domesticated populations of blue catfish, Ictalurus furcatus, using genotyping‐by‐sequencing and subsequent SNP validation " (Li,
 Waldbieser, Bosworth, Beck, Thongda & Peatman; 2014). Apartir de SNPs generados para el pez gato azul para poblaciones silvestres y domesticas.
 
+Detalles: Los SNP fueron llamados por TASSEL 4.0 después de mapear las lecturas crudas de GBS al genoma del bagre azul por BWA. El archivo VCF que contiene información de SNP que retiene información sobre la profundidad de la cobertura para cada alelo, contiene todas las llamadas de SNP sin procesar.
+
 #Se formo una carpeta docker con un run de vcf.
 
 Analisiss="docker run --rm -v /home/alberto/Escritorio/ProyectoUnidad5_AEPP/Analisis:/data biocontainers/vcftools:0.1.15 vcftools"
