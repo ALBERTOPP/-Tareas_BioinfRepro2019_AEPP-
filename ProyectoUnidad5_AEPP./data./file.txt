@@ -1,0 +1,2 @@
+VCF FILE
+[https://datadryad.org/bitstream/handle/10255/dryad.62613/all.mergedSNPs.vcf?sequence=1]
