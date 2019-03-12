@@ -1,5 +1,5 @@
 ######SNPRELATE (PCA DE SNPŚ)#################
-#Instalacion#
+#Instalation#
 #if (!requireNamespace("BiocManager", quietly = TRUE))
 #              install.packages("BiocManager")
 #              BiocManager::install("SNPRelate", version = "3.8")
