@@ -11,7 +11,7 @@ library(gdsfmt)
 library(SNPRelate)
 library(ggplt2)
 
-###Charger the doc.vcf###
+###upload file doc.vcf###
 vcf <- "all.mergedSNPs.vcf"
 snpgdsVCF2GDS(vcf,"gatos.gds",ignore.chr.prefix="chr_")##Do the *.gds file
 pro.gds <- snpgdsOpen("gatos.gds")##Open *.gds file
