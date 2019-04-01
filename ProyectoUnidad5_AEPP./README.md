@@ -28,4 +28,4 @@ SNPRelate is a statistical package of R that allows us to generate a PCA from th
 ### [**PHYLOVIZ 2.0**](http://www.phyloviz.net/)
 PHYLOVIZ allows phylogenetic inference and data visualization for large datasets of sequence based typing methods, including Single Nucleotide Polymorphism (SNP) and whole genome. To incorporates new data analysis algorithms and new visualization modules, as well as the capability of saving projects for subsequent works.
 
-![Ictalurus furcatus](https://www.peceswiki.com/Imagenes/pez-gato.jpg "Pez gato azul")
+![Ictalurus furcatus](https://www.peceswiki.com/Imagenes/pez-gato.jpg "Ictalurus furcatus")
