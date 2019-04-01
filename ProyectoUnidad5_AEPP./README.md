@@ -19,13 +19,13 @@ Share of SNPs generated for blue catfish for wild and domestic populations.They 
 (Mississippi River, Missouri, D&B, Rio Grande and Texas). Stringent filtering of SNP-calling parameters 
 resulted in 4275 SNP loci represented across all five populations.
 
-### **PopGenome 2.6.1** [https://popgenome.weebly.com/] 
+### **PopGenome 2.6.1**[https://popgenome.weebly.com/] 
 POPGENOME is a valuable tool for the analysis of genetic data and facilitates the implementation of multiple algorithms for analysis. It is available in CRAN and allows the entry of different formats such as impute.
 
-### **SNPRelate 3.8** [https://bioconductor.org/packages/release/bioc/html/SNPRelate.html] 
+### **SNPRelate 3.8**[https://bioconductor.org/packages/release/bioc/html/SNPRelate.html] 
 SNPRelate is a statistical package of R that allows us to generate a PCA from the SNP data stored in the vcf file of the data folder of the repository. This program works through the statistical platform of R and is available in Bioconductor to be downloaded.
 
-### **PHYLOVIZ 2.0** [http://www.phyloviz.net/]
+### **PHYLOVIZ 2.0**[http://www.phyloviz.net/]
 PHYLOVIZ allows phylogenetic inference and data visualization for large datasets of sequence based typing methods, including Single Nucleotide Polymorphism (SNP) and whole genome. To incorporates new data analysis algorithms and new visualization modules, as well as the capability of saving projects for subsequent works.
 
-### ![PEZ GATO AZUL](https://www.google.com/search?rlz=1C1CAFB_enMX617MX617&biw=1920&bih=888&tbm=isch&sa=1&ei=uWaZXJH8NYiSsAXeuKewBg&q=Ictalurus+furcatus&oq=Ictalurus+furcatus&gs_l=img.3..0.42097.42097..42476...0.0..0.101.101.0j1......1....2j1..gws-wiz-img.xeliHFdgNws#imgrc=eBWxfUqQf039tM: "Pez gato azul")
+¡[PEZ GATO AZUL](https://www.google.com/search?rlz=1C1CAFB_enMX617MX617&biw=1920&bih=888&tbm=isch&sa=1&ei=uWaZXJH8NYiSsAXeuKewBg&q=Ictalurus+furcatus&oq=Ictalurus+furcatus&gs_l=img.3..0.42097.42097..42476...0.0..0.101.101.0j1......1....2j1..gws-wiz-img.xeliHFdgNws#imgrc=eBWxfUqQf039tM: "Pez gato azul")
