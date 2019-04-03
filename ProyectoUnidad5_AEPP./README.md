@@ -11,9 +11,8 @@ scripts necessary for the realization of the project.
 
 - In the folder [meta](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/tree/master/ProyectoUnidad5_AEPP./meta.) the graphs obtained in the analyzes.
 
-The data were obtained from the publication "SNP discovery in wild and domesticated populations of blue 
-catfish, Ictalurus furcatus, using genotyping-by-sequencing and subsequent SNP validation" 
-(Li, Waldbieser, Bosworth, Beck, Thongda & Peatman, 2014).[https://www.ncbi.nlm.nih.gov/pubmed/24797164] 
+The data were obtained from the publication ["SNP discovery in wild and domesticated populations of blue 
+catfish, Ictalurus furcatus, using genotyping-by-sequencing and subsequent SNP validation"](https://www.ncbi.nlm.nih.gov/pubmed/24797164) (Li, Waldbieser, Bosworth, Beck, Thongda & Peatman, 2014). 
 Share of SNPs generated for blue catfish for wild and domestic populations.They utilized genotyping-by-sequencing
 (GBS) to capture and genotype SNP markers on 190 individuals from five wild and domesticated populations 
 (Mississippi River, Missouri, D&B, Rio Grande and Texas). Stringent filtering of SNP-calling parameters 
