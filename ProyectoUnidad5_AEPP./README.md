@@ -2,14 +2,7 @@
 
 ### Alberto Esteban Pérez Pedraza
 
-This project consists of general diversity analyzes obtained from SNPs obtained from 5 wild and domesticated populations of catfish in the USA. The project consists of a README, a SUMMARY and three folders (data, bin, meta) that contain the data and 
-scripts necessary for the realization of the project. 
-
-- Inside the folder [data](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/tree/master/ProyectoUnidad5_AEPP./data.) is stored the information of the SNPs obtained in its vcf format. 
-
-- In the folder [bin](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/tree/master/ProyectoUnidad5_AEPP./bin.) the scripts that were used and some notes that facilitate the replication of the analyzes. 
-
-- In the folder [meta](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/tree/master/ProyectoUnidad5_AEPP./meta.) the graphs obtained in the analyzes.
+This project consists of general diversity analyzes obtained from SNPs obtained from 5 wild and domesticated populations of catfish in the USA. 
 
 The data were obtained from the publication ["SNP discovery in wild and domesticated populations of blue 
 catfish, Ictalurus furcatus, using genotyping-by-sequencing and subsequent SNP validation"](https://www.ncbi.nlm.nih.gov/pubmed/24797164) (Li, Waldbieser, Bosworth, Beck, Thongda & Peatman, 2014). 
@@ -17,6 +10,15 @@ Share of SNPs generated for blue catfish for wild and domestic populations.They 
 (GBS) to capture and genotype SNP markers on 190 individuals from five wild and domesticated populations 
 (Mississippi River, Missouri, D&B, Rio Grande and Texas). Stringent filtering of SNP-calling parameters 
 resulted in 4275 SNP loci represented across all five populations.
+
+The project consists of a README, a SUMMARY and three folders (data, bin, meta) that contain the data and 
+scripts necessary for the realization of the project. 
+
+- Inside the folder [data](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/tree/master/ProyectoUnidad5_AEPP./data.) is stored the information of the SNPs obtained in its vcf format. 
+
+- In the folder [bin](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/tree/master/ProyectoUnidad5_AEPP./bin.) the scripts that were used and some notes that facilitate the replication of the analyzes. 
+
+- In the folder [meta](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/tree/master/ProyectoUnidad5_AEPP./meta.) the graphs obtained in the analyzes.
 
 A preliminary visualization of the data will be done using the **vcfR 1.8 program**. Subsequently, a PCA was performed with the values of SNPs filtered (maf = 0.5) with the program **SNPRelate 3.8**, this with the purpose of observing if there is structure among the populations. Finally, a tree without root of the individuals in the program **PHYLOVIZ 2.0** was made to observe the genetic interactions of all the populations. Subsequently, the program ggplot2 is used to generate 
 a graph that represents the results for both analyzes.
