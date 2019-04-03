@@ -18,11 +18,11 @@ Share of SNPs generated for blue catfish for wild and domestic populations.They 
 (Mississippi River, Missouri, D&B, Rio Grande and Texas). Stringent filtering of SNP-calling parameters 
 resulted in 4275 SNP loci represented across all five populations.
 
-This study consist in an genetic diversity analysis  in the program **PopGenome 2.6.1**. Subsequently, a PCA was performed with the values of SNPs filtered (maf = 0.5) with the program **SNPRelate 3.8**, this with the purpose of observing if there is structure among the populations. Finally, a tree without root of the individuals in the program **PHYLOVIZ 2.0** was made to observe the genetic interactions of all the populations. Subsequently, the program ggplot2 is used to generate 
+A preliminary visualization of the data will be done using the **vcfR 1.8 program**. Subsequently, a PCA was performed with the values of SNPs filtered (maf = 0.5) with the program **SNPRelate 3.8**, this with the purpose of observing if there is structure among the populations. Finally, a tree without root of the individuals in the program **PHYLOVIZ 2.0** was made to observe the genetic interactions of all the populations. Subsequently, the program ggplot2 is used to generate 
 a graph that represents the results for both analyzes.
 
-### [**PopGenome 2.6.1**](https://popgenome.weebly.com/) 
-POPGENOME is a valuable tool for the analysis of genetic data and facilitates the implementation of multiple algorithms for analysis. It is available in CRAN and allows the entry of different formats such as impute.
+### [**vcfR 1.8**](https://cran.r-project.org/web/packages/vcfR/index.html) 
+This software allows us to read and do analysis of * .cvf files. In the same way it allows us to convert files to different formats such as * .fasta, among others.
 
 ### [**SNPRelate 3.8**](https://bioconductor.org/packages/release/bioc/html/SNPRelate.html)
 SNPRelate is a statistical package of R that allows us to generate a PCA from the SNP data stored in the vcf file of the data folder of the repository. This program works through the statistical platform of R and is available in Bioconductor to be downloaded.
