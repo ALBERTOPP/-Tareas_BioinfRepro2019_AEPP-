@@ -5,13 +5,11 @@
 This project consists of general diversity analyzes obtained from SNPs obtained from 5 wild and domesticated populations of catfish in the USA. The project consists of a README, a SUMMARY and three folders (data, bin, meta) that contain the data and 
 scripts necessary for the realization of the project. 
 
-- Inside the folder "data"() is stored the information 
-of the SNPs obtained in its vcf format. 
+- Inside the folder "data"(https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/tree/master/ProyectoUnidad5_AEPP./data.) is stored the information of the SNPs obtained in its vcf format. 
 
-In the folder "bin"() the scripts that were used and some notes that
-facilitate the replication of the analyzes. 
+- In the folder "bin"(https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/tree/master/ProyectoUnidad5_AEPP./bin.) the scripts that were used and some notes that facilitate the replication of the analyzes. 
 
-In the folder "meta"() the graphs obtained in the analyzes.
+- In the folder "meta"(https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/tree/master/ProyectoUnidad5_AEPP./meta.) the graphs obtained in the analyzes.
 
 The data were obtained from the publication "SNP discovery in wild and domesticated populations of blue 
 catfish, Ictalurus furcatus, using genotyping-by-sequencing and subsequent SNP validation" 
