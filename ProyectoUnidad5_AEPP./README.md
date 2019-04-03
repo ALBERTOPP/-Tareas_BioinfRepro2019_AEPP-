@@ -2,14 +2,16 @@
 
 ### Alberto Esteban Pérez Pedraza
 
-This project consists of general diversity analyzes obtained from SNPs obtained from 5 wild and domesticated populations of catfish in the USA. First, genetic diversity analyzes were carried out in the program **PopGenome 2.6.1**. Subsequently, a PCA was performed with the values of SNPs filtered (maf = 0.5) with the program **SNPRelate 3.8**, this with the purpose of observing if there is structure among the populations. Finally, a tree without root of the individuals in the program **PHYLOVIZ 2.0** was made to observe the genetic interactions of all the populations. Subsequently, the program ggplot2 is used to generate 
-a graph that represents the results for both analyzes.
+This project consists of general diversity analyzes obtained from SNPs obtained from 5 wild and domesticated populations of catfish in the USA. The project consists of a README, a SUMMARY and three folders (data, bin, meta) that contain the data and 
+scripts necessary for the realization of the project. 
 
-The project consists of a README, a SUMMARY and three folders (data, bin, meta) that contain the data and 
-scripts necessary for the realization of the project. Inside the folder "data" is stored the information 
-of the SNPs obtained in its vcf format. In the folder "bin" the scripts that were used and some notes that
-facilitate the replication of the analyzes. In the folder "meta" the manual of the programs that were used 
-and the graphs obtained in the analyzes.
+- Inside the folder "data"() is stored the information 
+of the SNPs obtained in its vcf format. 
+
+In the folder "bin"() the scripts that were used and some notes that
+facilitate the replication of the analyzes. 
+
+In the folder "meta"() the graphs obtained in the analyzes.
 
 The data were obtained from the publication "SNP discovery in wild and domesticated populations of blue 
 catfish, Ictalurus furcatus, using genotyping-by-sequencing and subsequent SNP validation" 
@@ -19,6 +21,9 @@ Share of SNPs generated for blue catfish for wild and domestic populations.They 
 (Mississippi River, Missouri, D&B, Rio Grande and Texas). Stringent filtering of SNP-calling parameters 
 resulted in 4275 SNP loci represented across all five populations.
 
+This study consist in an genetic diversity analysis  in the program **PopGenome 2.6.1**. Subsequently, a PCA was performed with the values of SNPs filtered (maf = 0.5) with the program **SNPRelate 3.8**, this with the purpose of observing if there is structure among the populations. Finally, a tree without root of the individuals in the program **PHYLOVIZ 2.0** was made to observe the genetic interactions of all the populations. Subsequently, the program ggplot2 is used to generate 
+a graph that represents the results for both analyzes.
+
 ### [**PopGenome 2.6.1**](https://popgenome.weebly.com/) 
 POPGENOME is a valuable tool for the analysis of genetic data and facilitates the implementation of multiple algorithms for analysis. It is available in CRAN and allows the entry of different formats such as impute.
 
@@ -27,6 +32,7 @@ SNPRelate is a statistical package of R that allows us to generate a PCA from th
 
 ### [**PHYLOVIZ 2.0**](http://www.phyloviz.net/)
 PHYLOVIZ allows phylogenetic inference and data visualization for large datasets of sequence based typing methods, including Single Nucleotide Polymorphism (SNP) and whole genome. To incorporates new data analysis algorithms and new visualization modules, as well as the capability of saving projects for subsequent works.
+
 
 ![Ictalurus furcatus](https://www.tnaqua.org/images/uploads/our_animals/ID_BlueCatfish_1200x490.jpg "Ictalurus furcatus")
 
