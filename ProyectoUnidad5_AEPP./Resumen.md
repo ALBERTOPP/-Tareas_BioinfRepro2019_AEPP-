@@ -9,6 +9,8 @@ Este proyecto se subdivide en tres carpetas (bin, meta, data). donde la carpeta 
 **RESULTADOS**
 Aparentemente las poblaciones de pez gato siguen compartiendo gran parte de sus recursos geneticos, aunque es posible evidenciar la segregacion de dos grupos importantes Mo y Msr.
 
+![SNP calidad](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/ProyectoUnidad5_AEPP./meta./SNP%20quality.png "SNP calidad")
+
 ![PCA de SNPs realizado en SNPRelate](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/ProyectoUnidad5_AEPP./meta./PCASNPR.png "PCA de SNPs realizado en SNPRelate 3.8")
 
 En el PCA se muestra que existen grupos fuertemente relacionados, sin embargo los grupos Mo y Msr se separan del resto gradualmente.
