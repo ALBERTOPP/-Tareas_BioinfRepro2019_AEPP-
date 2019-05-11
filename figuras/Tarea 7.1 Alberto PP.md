@@ -29,36 +29,29 @@ Para esto se utilizarón los programas [org.Mm.eg.db v3.8.2](https://bioconducto
 Dentro de los analisis de calidad es posible observar que las sondas catalogadas como malas en calidad presentan menor intensidad de sus contrapartes. Estas sondas de baja calidad pueden llegar a generar resultados dudosos en los analisis por lo que eliminarlas es de crucial importancia para no obtener resultados erroneos.
          
 ![Diagramas de caja de datos sin procesar en escala log por microarreglo y calidad de sonda](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/boxplot_raw_probe_qc.png "Boxplot")
-Figura 1. Diagramas de caja de datos sin procesar en escala log por microarreglo y calidad de sonda. El ancho de las cajas es proporcional al número de sondas.
+**Figura 1.** Diagramas de caja de datos sin procesar en escala log por microarreglo y calidad de sonda. El ancho de las cajas es proporcional al número de sondas.
 
 Para los datos obtenidos al excluir las zondas de mala calidad se observa que existe una buena calidad dentro de los datos de ambos tratamientos donde destacan un poco más los del tratamiento "C".
 
 ![Diagramas de caja de datos en bruto por microarreglo](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/boxplot_raw_treatment.png "Boxplot por muestras")
-Figura 2. Diagramas de caja de datos en bruto por microarreglo. Las cajas están coloreadas según tratamiento.
+**Figura 2.** Diagramas de caja de datos en bruto por microarreglo. Las cajas están coloreadas según tratamiento.
 
 Para los valores de p calculados en nuestras muestars seleccionadas se observa que tanto los valores F1 como los valores ponderados con muestras semejantes (Fs) son muy similares. por lo que se puede considerar que nuestra muestra suele comportarse de esa manera y es predecible en cierto modo.
 
 ![Densidad de la distribución de los valores de p](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/P-values%20Hist.png "Densidad de la distribución de los valores de p")
-Figura 3. Densidad de la distribución de los valores de p. Ptab: tabular, Pvalperm: permutación, F1: prueba de F convencional, Fs: prueba de F con contracción de la varianza usando información de múltiples sondas (técnica para aumentar el poder de la prueba).
+**Figura 3.** Densidad de la distribución de los valores de p. Ptab: tabular, Pvalperm: permutación, F1: prueba de F convencional, Fs: prueba de F con contracción de la varianza usando información de múltiples sondas (técnica para aumentar el poder de la prueba).
 
-Los diagramas de Venn nos muestran que el número de genes con efectos de interacción, pero repartidos ya sea por tratamiento o por genotipo. Es posible observar que la mayor parte de los genes respondieron al tratamiento en el genotipo BY. 
+Los diagramas de Venn nos muestran que el número de genes con efectos de interacción, pero repartidos ya sea por tratamiento o por genotipo. Es posible observar que la mayor parte de los genes respondieron al tratamiento en el genotipo BY. Del mismo modo, se pueden observar más diferencias entre los genotipos en los animales castrados.
 
 ![Genes DE por efectos marginales y de interacción.](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/vennDiagram_DiffExprs.png "Diagrama de Venn")
-Figura 5. Genes DE por efectos marginales y de interacción.
-
-Del mismo modo, se pueden observar más diferencias entre los genotipos en los animales castrados.
+**Figura 4.** Genes DE por efectos marginales y de interacción.
 
 ![Genes DE por efectos de interacción](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/vennDiagram_Int.png "Diagrama de Venn")
 Figura 6. Genes DE por efectos de interacción, divididos por tratamiento (izquierda) y genotipo (derecha).
 
 ## Conclusión
-Se encontro diferencia entre la expresion genica de las muestras castradas. Por lo que se pudiera concluir que esta modificacón en los patrones naturales de testosterona genera un cambio en la expresion del gen y por ello son mas propensos aa
+Se encontro una diferencia significativa entre la expresion genica de las muestras castradas. Por lo que se pudiera concluir que esta modificacón en los patrones naturales de testosterona genera un cambio en la expresión del gen y por ello se produce el aumentó del tamaño de los cardiomiocitos. Varios genes cardiacos respondieron a la testosterona, lo que indica que el cromo puede estar relacionado con las diferencias morfológicas de las células cardiacas de ratones adultos, a través de la interferencia con los eventos reguladores de andrógenos. Se recomienda hacer una revisión de las muestras totales para ver si se conserva el patrón, así como para tratar de detectar interacciones no consideradas con nuestra muestra límitada. 
 
 ## Literatura
 
 + Llamas B, Verdugo RA, Churchill GA, Deschepper CF. Chromosome Y variants from different inbred mouse strains are linked to differences in the morphologic and molecular responses of cardiac cells to postpubertal testosterone. BMC Genomics 2009 Apr 7;10:150. 
-
-+ 
- 
-+ 
- 
