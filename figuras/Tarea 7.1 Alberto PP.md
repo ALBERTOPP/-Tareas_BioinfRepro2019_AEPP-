@@ -1,11 +1,11 @@
-#Tarea 7.1
-###Expresión diferencial de genes
+# Tarea 7.1
+### Expresión diferencial de genes
 
-#####Alberto Esteban Pérez Pedraza
-###Profesor
-#####Dr. Ricardo Verdugo Laines
+##### Alberto Esteban Pérez Pedraza
+### Profesor
+##### Dr. Ricardo Verdugo Laines
 --------------------------------------------------
-##Introducción
+## Introducción
 La expresión génica es el proceso por medio del cual todos los microorganismos procariotas y células eucariotas transforman la información codificada por los ácidos nucleicos en las proteínas necesarias para su desarrollo, funcionamiento y reproducción con otros organismos.
 
 Definición
@@ -32,7 +32,7 @@ Determinar si existe expresión diferencial entre tratamientos.
 Evaluar las diferencias en la respuesta al tratamiento entre los dos genotipos.
 Para obtener más información sobre los datos y los resultados biológicos, consulte (Llamas et al. 2009) . Para un análisis más técnico y una descripción de metodologías estadísticas y diseño experimental, ver (Verdugo et al. 2009) .
 
-##Metodologia
+## Metodologia
  El conjunto de datos completo está disponible en la base de datos GEO por ID [GSE15354](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE15354)
  
  
@@ -61,10 +61,10 @@ GOdata <- new("topGOdata", ontology="BP", allGenes=genes.int,+           descrip
 
 ![Diagrama de Venn](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/vennDiagram_Int.png"Diagrama de Venn")
 
-##Conclusión
+## Conclusión
 Se encontro diferencia entre la expresion genica de las muestras castradas. Por lo que se pudiera concluir que esta modificacón en los patrones naturales de testosterona genera un cambio en la expresion del gen y por ello son mas propensos aa
 
-##Literatura
+## Literatura
 
 + Llamas B, Verdugo RA, Churchill GA, Deschepper CF. Chromosome Y variants from different inbred mouse strains are linked to differences in the morphologic and molecular responses of cardiac cells to postpubertal testosterone. BMC Genomics 2009 Apr 7;10:150. 
 
