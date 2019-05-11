@@ -3,7 +3,7 @@
 
 ##### Alberto Esteban Pérez Pedraza
 ### Profesor
-##### Dr. Ricardo Verdugo Laines
+##### Dr. Ricardo Verdugo Salgado
 --------------------------------------------------
 
 ## Introducción
