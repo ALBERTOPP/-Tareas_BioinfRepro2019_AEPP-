@@ -25,28 +25,31 @@ Se consideraron transcritos cuando se detectó en al menos el 25% de las sondas 
 Para esto se utilizarón los programas [org.Mm.eg.db v3.8.2](https://bioconductor.org/packages/release/data/annotation/html/org.Mm.eg.db.html) para evaluar los datos crudos, [preprocessCore v3.6](https://bioconductor.org/packages/release/bioc/html/preprocessCore.html) para aplicar una normalización de cuantiles, [maanova v3.9](http://www.bioconductor.org/packages/release/bioc/html/maanova.html) para obtener valores estadisticos entre muestras (Prueba de F), [limma 3.9](https://bioconductor.org/packages/release/bioc/html/limma.html) para visualizar las intereacciones atraves de diagramas de Venn y [topGO v3.6](http://bioconductor.org/packages/release/bioc/html/topGO.html) para hacer pruebas funcionales.
 
 ## Resultado
- 
-La posición de las matrices, desde A a H, se muestra en el eje x porque las matrices de Illumina pueden tener un efecto de posición, con una mayor intensidad en las primeras posiciones y una más baja en las últimas (Verdugo et al. 2009) . Este fue el caso en este experimento, aunque el efecto no es obvio en el subconjunto de 5000 sondas utilizadas en este tutorial.
-         
 
+Dentro de los analisis de calidad es posible observar que las sondas catalogadas como malas en calidad presentan menor intensidad de sus contrapartes. Estas sondas de baja calidad pueden llegar a generar resultados dudosos en los analisis por lo que eliminarlas es de crucial importancia para no obtener resultados erroneos.
+         
 ![Diagramas de caja de datos sin procesar en escala log por microarreglo y calidad de sonda](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/boxplot_raw_probe_qc.png "Boxplot")
 Figura 1. Diagramas de caja de datos sin procesar en escala log por microarreglo y calidad de sonda. El ancho de las cajas es proporcional al número de sondas.
+
+Para los datos obtenidos al excluir las zondas de mala calidad se observa que existe una buena calidad dentro de los datos de ambos tratamientos donde destacan un poco más los del tratamiento "C".
 
 ![Diagramas de caja de datos en bruto por microarreglo](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/boxplot_raw_treatment.png "Boxplot por muestras")
 Figura 2. Diagramas de caja de datos en bruto por microarreglo. Las cajas están coloreadas según tratamiento.
 
+Para los valores de p calculados en nuestras muestars seleccionadas se observa que tanto los valores F1 como los valores ponderados con muestras semejantes (Fs) son muy similares. por lo que se puede considerar que nuestra muestra suele comportarse de esa manera y es predecible en cierto modo.
+
 ![Densidad de la distribución de los valores de p](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/P-values%20Hist.png "Densidad de la distribución de los valores de p")
-Figura 4. Densidad de la distribución de los valores de p. Ptab: tabular, Pvalperm: permutación, F1: prueba de F convencional, Fs: prueba de F con contracción de la varianza usando información de múltiples sondas (técnica para aumentar el poder de la prueba).
+Figura 3. Densidad de la distribución de los valores de p. Ptab: tabular, Pvalperm: permutación, F1: prueba de F convencional, Fs: prueba de F con contracción de la varianza usando información de múltiples sondas (técnica para aumentar el poder de la prueba).
+
+Los diagramas de Venn nos muestran que el número de genes con efectos de interacción, pero repartidos ya sea por tratamiento o por genotipo. Es posible observar que la mayor parte de los genes respondieron al tratamiento en el genotipo BY. 
 
 ![Genes DE por efectos marginales y de interacción.](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/vennDiagram_DiffExprs.png "Diagrama de Venn")
 Figura 5. Genes DE por efectos marginales y de interacción.
 
+Del mismo modo, se pueden observar más diferencias entre los genotipos en los animales castrados.
+
 ![Genes DE por efectos de interacción](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/vennDiagram_Int.png "Diagrama de Venn")
 Figura 6. Genes DE por efectos de interacción, divididos por tratamiento (izquierda) y genotipo (derecha).
-
-Ambas gráficos en la Figura 6 muestran la misma prueba de dos formas diferentes, es decir, el número de genes con efectos de interacción, pero repartidos ya sea por tratamiento o por genotipo. Debido a que en la práctica estamos mostrando los resultados de cuatro pruebas diferentes (pero relacionadas), el número total de genes seleccionados en cada diagrama puede no ser exactamente el mismo, pero deberían estar de acuerdo en gran medida.
-
-Aunque los números aquí son pequeños porque usamos solo una pequeña muestra de sondas, verá que has más genes respondiendo al tratamiento en el genotipo BY que en el genotipo B. Además, se pueden observar más diferencias entre los genotipos en los animales castrados. Este fue el patrón observado en el conjunto de datos completo también. Ver Figura 4 de (Llamas et al. 2009) 
 
 ## Conclusión
 Se encontro diferencia entre la expresion genica de las muestras castradas. Por lo que se pudiera concluir que esta modificacón en los patrones naturales de testosterona genera un cambio en la expresion del gen y por ello son mas propensos aa
