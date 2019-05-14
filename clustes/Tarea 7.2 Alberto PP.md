@@ -1,6 +1,5 @@
-# Tarea 7.1
-### Expresión diferencial de genes
-
+# Tarea 7.2
+###  Analisis funcional de datos de microarreglos
 ##### Alberto Esteban Pérez Pedraza
 ### Profesor
 ##### Dr. Ricardo Verdugo Salgado
@@ -28,31 +27,28 @@ Para esto se utilizarón los programas [org.Mm.eg.db v3.8.2](https://bioconducto
 
 Dentro de los analisis de calidad es posible observar que las sondas catalogadas como malas en calidad presentan menor intensidad de sus contrapartes. Estas sondas de baja calidad pueden llegar a generar resultados dudosos en los analisis por lo que eliminarlas es de crucial importancia para no obtener resultados erroneos.
          
-![Diagramas de caja de datos sin procesar en escala log por microarreglo y calidad de sonda](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/boxplot_raw_probe_qc.png "Boxplot")
+Se obtuvo un valor un poco bajo para la suma de cuadrados de las muestras (39616), lo que indica que no existe una variación muy grande dentro de los datos. La grafica de suma de cuadrados por muestra nos muestra que a partir del k=4 existe una disminución muy grande del número de sondas contenidas en cada cluster. Se decidió elegir a K=2 por esta misma razón, ya que al asignar varios clusters como posibles, la mayor parte de las sondas se posicionaron dentro de este agrupamiento. Esto se ve respaldado por los valores de boostrap obtenidos por el software pvclust v2.0, que solo nos arroja dos clusters con valores altos de boostrap. 
 
-**Figura 1.** Diagramas de caja de datos sin procesar en escala log por microarreglo y calidad de sonda. El ancho de las cajas es proporcional al número de sondas.
+         
+![Suma de cuadrados para las muestras](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/clustes/Captura%20de%20pantalla%20de%202019-05-13%2019-03-46.png "Suma de cuadrados para las muestras")
 
-Para los datos obtenidos al excluir las zondas de mala calidad se observa que existe una buena calidad dentro de los datos de ambos tratamientos donde destacan un poco más los del tratamiento "C".
+**Figura 1.** Suma de cuadrados para las muestras.
 
-![Diagramas de caja de datos en bruto por microarreglo](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/boxplot_raw_treatment.png "Boxplot por muestras")
+Los resultados graficados dentro del árbol generado para las muestras muestran cierta tendencia a segregar los individuos castrados de los intactos. Sin embargo, existe cierta incertidumbre entre los dos grupos principales. Por lo que este árbol no da resultados concluyentes del efecto de este tratamiento sobre las muestras. 
 
-**Figura 2.** Diagramas de caja de datos en bruto por microarreglo. Las cajas están coloreadas según tratamiento.
+![Árbol generado para las muestras estudiadas](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/clustes/Captura%20de%20pantalla%20de%202019-05-13%2019-25-24.png "Árbol generado para las muestras estudiadas")
 
-Para los valores de p calculados en nuestras muestars seleccionadas se observa que tanto los valores F1 como los valores ponderados con muestras semejantes (Fs) son muy similares. por lo que se puede considerar que nuestra muestra suele comportarse de esa manera y es predecible en cierto modo.
+**Figura 2.** Árbol generado para las muestras estudiadas.
 
-![Densidad de la distribución de los valores de p](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/P-values%20Hist.png "Densidad de la distribución de los valores de p")
+![Suma de cuadrados para las sondas](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/clustes/Captura%20de%20pantalla%20de%202019-05-13%2019-05-17.png "Suma de cuadrados para las sondas")
 
-**Figura 3.** Densidad de la distribución de los valores de p. Ptab: tabular, Pvalperm: permutación, F1: prueba de F convencional, Fs: prueba de F con contracción de la varianza usando información de múltiples sondas (técnica para aumentar el poder de la prueba).
+**Figura 3.** Suma de cuadrados para las sondas.
 
-Los diagramas de Venn nos muestran que el número de genes con efectos de interacción, pero repartidos ya sea por tratamiento o por genotipo. Es posible observar que la mayor parte de los genes respondieron al tratamiento en el genotipo BY. Del mismo modo, se pueden observar más diferencias entre los genotipos en los animales castrados.
 
-![Genes DE por efectos marginales y de interacción.](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/vennDiagram_DiffExprs.png "Diagrama de Venn")
 
-**Figura 4.** Genes DE por efectos marginales y de interacción.
+![Árbol generado para las sondas estudiadas](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/clustes/Captura%20de%20pantalla%20de%202019-05-11%2012-45-50.png "Árbol sondas")
 
-![Genes DE por efectos de interacción](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/figuras/vennDiagram_Int.png "Diagrama de Venn")
-
-**Figura 5.** Genes DE por efectos de interacción, divididos por tratamiento (izquierda) y genotipo (derecha).
+**Figura 4.** Árbol generado para las sondas estudiadas.
 
 ## Conclusión
 Se encontro una diferencia significativa entre la expresion genica de las muestras castradas. Por lo que se pudiera concluir que esta modificacón en los patrones naturales de testosterona genera un cambio en la expresión del gen y por ello se produce el aumentó del tamaño de los cardiomiocitos. Varios genes cardiacos respondieron a la testosterona, lo que indica que el cromo puede estar relacionado con las diferencias morfológicas de las células cardiacas de ratones adultos, a través de la interferencia con los eventos reguladores de andrógenos. Se recomienda hacer una revisión de las muestras totales para ver si se conserva el patrón, así como para tratar de detectar interacciones no consideradas con nuestra muestra límitada. 
