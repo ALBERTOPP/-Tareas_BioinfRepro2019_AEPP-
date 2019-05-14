@@ -16,7 +16,7 @@ El objetivo de este trabajo es detectar familias de genes que actuen diferencial
 Se utilizaron las 5000 sondas seleccionadas aleatoriamente en el ejercicio anterior obtenidas a partir del microarreglo BeadChips Illumina MouseRef-8 v2.0. Posteriormente se escalaron los datos para tener valores similares entre las muestras. 
 Se obtuvo la suma de cuadrados de los sets de datos (muestras y sondas) y se generaron gráficos de suma de cuadrados para visualizar el posible número de agrupamientos de genes que pudieran existir.
 
-Una vez identificado el número de posibles clusters que existian entre los dos sets de datos se realizaron particionamientos jerárquicos. Primeramente se hizo un particionamiento jerárquico para las muestras con la medida de distancia euclideana. Del mismo modo se realizó un particionamiento jerárquico de las sondas usando el complemento de la correlación de pearson como la medida de distancia. Este metodo nos ayudara a generar valores de soporte boostrap para nuestras hipotesis de agrupamiento. Para esto se utilizó el programa [pvclust v2.0](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/), el cual genera valores de soporte a partir de permutaciones para dar robustes al análisis. 
+Una vez identificado el número de posibles clusters que existian entre los dos sets de datos se realizaron particionamientos jerárquicos. Primeramente se hizo un particionamiento jerárquico para las muestras con la medida de distancia euclideana. Del mismo modo se realizó un particionamiento jerárquico de las sondas usando el complemento de la correlación de pearson como la medida de distancia. Este metodo nos ayudara a generar valores de soporte boostrap para nuestras hipotesis de agrupamiento. Para esto se utilizó el programa [pvclust v2.0](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/), el cual genera valores de soporte a partir de permutaciones para dar robustes al análisis, ya que mclust selecciona el modelo óptimo de acuerdo con BIC para EM inicializado por agrupación jerárquica para modelos de mezcla Gaussianos parametrizados. 
 
 ## Resultado
 
@@ -27,25 +27,25 @@ En el caso de las muestras se obtuvo un valor un poco bajo para la suma de cuadr
          
 ![Suma de cuadrados para las muestras](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/clustes/Captura%20de%20pantalla%20de%202019-05-13%2019-03-46.png "Suma de cuadrados para las muestras")
 
-**Figura 1.** Suma de cuadrados para las muestras.
+**Figura 1.** Asignación de clusters en relación a la suma de cuadrados de las muestras.
 
 Los resultados graficados dentro del árbol generado para las muestras muestran cierta tendencia a segregar los individuos castrados de los intactos. Sin embargo, existe cierta incertidumbre entre los dos grupos principales. Por lo que este árbol no da resultados concluyentes del efecto de este tratamiento sobre las muestras. 
 
 ![Árbol generado para las muestras estudiadas](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/clustes/Captura%20de%20pantalla%20de%202019-05-13%2019-25-24.png "Árbol generado para las muestras estudiadas")
 
-**Figura 2.** Árbol generado para las muestras estudiadas.
+**Figura 2.** Árbol generado por distancia Euclidianas para las muestras estudiadas.
 
 El resultado obtenido por la suma de cuadrados para las sondas fue de 263.8735, este valor es superior al obtenido por las muestras, lo que es congruente ya que es una mayor cantidad de datos las que se sometieron a este análisis, por lo que la variación es mayor. Por otro lado la grafica de suma de cuadrados para todas las sondas es un tanto más variante,ya que a pesar de tener esa misma tendencia de disminuir en las sondas captadas cuando se incrementa el número de k, existen picos en K=8 y K=14 que nos pudiera decir que esos agrupamientos podrían ser una opción valida para este set de datos. Sin embargo, al hacer el plot de las sondas solamente se identifican claramente dos grupos. Estadisticamente se detectaron estos mismos clusters (K=2) y los valores de boostrap respaldan esta suposición.
 
 ![Suma de cuadrados para las sondas](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/clustes/Captura%20de%20pantalla%20de%202019-05-13%2019-05-17.png "Suma de cuadrados para las sondas")
 
-**Figura 3.** Suma de cuadrados para las sondas.
+**Figura 3.** Asignación de clusters en relación a la suma de cuadrados de las muestras.
 
 Los resultados del árbol obtenido para las sondas generado a partir de distancias de correlación de Pearson nos muestran dos grandes grupos que se separan claramente, sin embargo, no es posible visualizar si corresponden a los mismos del árbol anterior ya que se satura por el gran numero de sondas análizadas.
 
 ![Árbol generado para las sondas estudiadas](https://github.com/ALBERTOPP/Tareas_BioinfRepro2019_AEPP/blob/master/clustes/Captura%20de%20pantalla%20de%202019-05-11%2012-45-50.png "Árbol sondas")
 
-**Figura 4.** Árbol generado para las sondas estudiadas.
+**Figura 4.** Árbol generado por distancia de correlación de Pearson para las sondas estudiadas.
 
 ## Conclusión
 Se aprecia cierta diferenciación de la expresión genica de los tratamientos elejidos, sin embargo, no se encontro una diferencia significativa entre la expresion de las familias de genes de las muestras castradas y las intactas. Se pudiera concluir que esta modificacón en los patrones naturales de testosterona ha generado un cambio en la expresión de los genes que interactuan en este proceso, pero hace falta robustecer el análisis sometiendo a prueba el resto de las sondas para evidenciar claramente el aumentó del tamaño de los cardiomiocitos debido a la respuesta de los tratamientos. Se recomienda hacer una revisión de las muestras totales para ver si se conserva el patrón, así como para tratar de detectar interacciones no consideradas con nuestra muestra límitada. 
@@ -54,3 +54,4 @@ Se aprecia cierta diferenciación de la expresión genica de los tratamientos el
 
 + Llamas B, Verdugo RA, Churchill GA, Deschepper CF. Chromosome Y variants from different inbred mouse strains are linked to differences in the morphologic and molecular responses of cardiac cells to postpubertal testosterone. BMC Genomics 2009 Apr 7;10:150. 
 
++ Ryota Suzuki, Hidetoshi Shimodaira, Pvclust: an R package for assessing the uncertainty in hierarchical clustering, Bioinformatics, Volume 22, Issue 12, 15 June 2006, Pages 1540–1542, https://doi.org/10.1093/bioinformatics/btl117
