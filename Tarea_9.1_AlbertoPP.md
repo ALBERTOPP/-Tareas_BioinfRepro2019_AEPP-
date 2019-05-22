@@ -16,7 +16,7 @@ Existen dos técnicas principales para realizar el ensamble. La primera se basa 
 
 Los principales retos en el montaje del genoma son los errores de secuenciación, la contaminación por vectores bacterianos y las regiones de secuencias repetitivas. Para tratar de generar la mejor representación del genoma que deseamos se debe someter a diferentes filtros que ayudan a mejorar la calidad de la secuencia consenso. Uno de los filtros más importantes a la hora de realizar los alineamientos es el umbral de agrupación específica. Este hace referencia al porcentaje mínimo de similitud que una secuencia debe tener para ser reconocidas como parte de esa región del genoma (en ipyrad “clust_threshold”). Otro de los parámetros que se han considerado como importante es la cobertura mínima  (en ipyrad  “mindepth_statistical”) a la que se realizarán el llamado de bases, pues esto nos permite corroborar la información de las secuencias y darle peso a nuestra inferencia del genoma.
 
-En este trabajo se harán recomendaciones de como variar estos parámetros en el programa [ipyrad](https://ipyrad.readthedocs.io/), para facilitar la búsqueda de los valores que mejor se ajusten a los datos de interés.
+En este trabajo se harán recomendaciones de como variar estos parámetros en el programa [ipyrad v0.7.11](https://ipyrad.readthedocs.io/), para facilitar la búsqueda de los valores que mejor se ajusten a los datos de interés.
 
  
 ### **Contenido** 
