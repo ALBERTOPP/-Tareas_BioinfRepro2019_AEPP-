@@ -1,14 +1,14 @@
 ## **Tarea 9.1** 
 
+### **Ensamblaje de representación reducida de genomas**
+
 #### Alberto Esteban Pérez Pedraza
 
-#### **Encargado**
+### **Encargado**
 
 #### Dra Alicia Masttreta Yanez
 
-### **Ensamblaje de representación reducida de genomas**
-
-#### **Introducción** 
+### **Introducción** 
 
 Las nuevas técnicas de secuenciación (NGS) nos han permitido tener una visión más amplia de los procesos y patrones que se han forjado en las diferentes especies a través de su historia evolutiva. La obtención de un genoma completo permite contar la información contenida en los genes así como las regiones que modulan la expresión de los mismos. Sin embargo, no ha sido posible generar la secuencia completa de genomas de gran tamaño en un solo proceso, por lo que se generan fragmentos de la misma y posteriormente se someten a un proceso denominado ensamble. Este proceso trata de descifrar la secuencia genómica a partir de pequeños fragmentos de ADN, donde los fragmentos cortos se unen para formar fragmentos más grandes después de la eliminación de las superposiciones. 
 
@@ -19,11 +19,11 @@ Los principales retos en el montaje del genoma son los errores de secuenciación
 En este trabajo se harán recomendaciones de como variar estos parámetros en el programa [ipyrad](https://ipyrad.readthedocs.io/), para facilitar la búsqueda de los valores que mejor se ajusten a los datos de interés.
 
  
-#### **Contenido** 
+### **Contenido** 
 
 El programa [ipyrad](https://ipyrad.readthedocs.io/) es una herramienta interactiva que nos ayuda a procesar varios tipos de datos genéticos (RAD, ddRAD, GBS, entre otros) permitiendo realizar análisis de genética poblacional e inferencias filogenéticas. La principal función de este programa radica en el alineamiento de las secuencias. Como se mencionó anteriormente, se propone hacer una variación en los valores del **umbral de agrupamiento  (clust_threshold)** y **cobertura mínima (mindepth_statistical)** de la siguiente manera:
 
-14. **Umbral de agrupamiento  (clust_threshold)**
+1. **Umbral de agrupamiento  (clust_threshold)**
 Este es el nivel de similitud que deben presentar las secuencias en para ser reconocidas como homólogas. Este valor debe ingresarse en el param file como un decimal (ejemplo, 0.90). Este valor puede variar en gran medida dependiendo de la especie que se trabaja por lo que evaluar el nivel de similitud óptimo es una tarea de crucial importancia. Se recomienda evaluar a partir del 70% de similitud. Una de las cosas que se debe tener en cuenta es que el uso de valores superiores a 0,95 pueden generar que secuencias homologas no se agrupen, debido a la variación natural y a errores de secuenciación que pueden ser detectados en pasos posteriores (Ns, indeles, errores de secuenciación o polimorfismos). Es por esto que visualizar los datos obtenidos de distintos niveles de umbral nos permitirá tener una mejor idea del valor que debemos utilizar. Esto se efectúa a través del param file en los pasos 3 (secuencias crudas) y 6 (alineamiento maduro) por medio del siguiente comando:
 
 Cambios es en el param file:
@@ -44,7 +44,7 @@ Comandos de ejecución paso 3 (-s 3):
 >>> ipyrad -p params-data1-clust95.txt -s 3
 ```
 
-11. **Cobertura mínima (mindepth_statistical)** 
+2. **Cobertura mínima (mindepth_statistical)** 
 
 Un aspecto importante en el alineamiento de las secuencias es el número de veces que cada base del genoma está presente en los reads producidos. Este valor se denomina profundidad de cobertura (depth of coverage) y es uno de los factores determinantes para evaluar la fiabilidad del nucleótido asignado a esa posición del genoma.
 
@@ -70,9 +70,12 @@ Comandos de ejecución paso 4 (-s 4):
 
 Posteriormente se recomienda visualizar los valores obtenidos al variar estos parámetros para decidir el valor óptimo del set de datos.
 
-#### **Discusión**
+### **Discusión**
+
 Se eligieron estos parámetros como los más importantes sobre el alineamiento de las secuencias ya que, estos parámetros son los que mayor influencia presentan a la hora de obtener la información genética en el alineamiento, pues leves variaciones en los niveles asignados producen un sesgo importante en las muestras. Además de esto se recomienda replicar un par de muestras para averiguar el error promedio obtenido de la secuenciación y del ensamblado, con la finalidad de optimizar el proceso de alineamiento, dependiendo de la especie que se esté estudiando.
-#### **Literatura**
+
+### **Literatura**
+
 •	Aguilar-Bultet, L., & Falquet, L. (2015). Secuenciación y ensamblaje de novo de genomas bacterianos: una alternativa para el estudio de nuevos patógenos. Revista de salud animal, 37(2), 125-132.
 
 •	Eaton, D. A. R., & Overcast, I. (2016). ipyrad: interactive assembly and analysis of RADseq data sets.
